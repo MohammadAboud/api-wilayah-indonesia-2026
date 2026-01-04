@@ -50,12 +50,12 @@ async function buildManifest() {
     const stat = fs.statSync(p)
     const sha = await sha256File(p)
     manifest.files.push({ name: rel, sizeBytes: stat.size, sha256: sha })
-    console.log(`validated: docs/api/${rel} — ${Math.round(stat.size/1024)} KB — sha256:${sha.slice(0,8)}...`)
+    console.log(`validated: api/${rel} — ${Math.round(stat.size/1024)} KB — sha256:${sha.slice(0,8)}...`)
   }
 
   const out = path.join(apiDir, 'manifest.json')
   fs.writeFileSync(out, JSON.stringify(manifest, null, 2))
-  console.log('wrote docs/api/manifest.json')
+  console.log('wrote api/manifest.json')
 }
 
 buildManifest().catch(err => {
