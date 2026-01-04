@@ -1,6 +1,6 @@
 {
   "name": "api-wilayah-indonesia-2026",
-  "version": "2.0.1",
+  "version": "1.0.0",
   "description": "API Statis Data Wilayah Indonesia (JSON). Gratis, open source, dan dapat diakses langsung via HTTP Request.",
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7"
+  },
+  "dependencies": {
+    "idn-area-data": "^4.0.0"
   }
 }

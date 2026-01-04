@@ -59,7 +59,7 @@ Data disimpan dalam folder `api/` dengan format JSON Array.
 [
   {
     "id": "1101010",
-    "cityId": "1101",
+    "regencyId": "1101",
     "name": "TEUPAH SELATAN"
   },
   ...
@@ -83,19 +83,19 @@ Data disimpan dalam folder `api/` dengan format JSON Array.
 Anda dapat mengakses data langsung melalui URL berikut (ganti `<username>` dan `<repo>` sesuai repositori Anda, atau gunakan URL demo jika tersedia).
 
 **Base URL (jsDelivr - Recommended):**
-`https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api`
+`https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api`
 
-> **Catatan:** ID yang digunakan dalam API ini adalah ID internal dataset, bukan kode BPS standar (misal: Aceh = 11). Silakan merujuk ke `provinces.json`, `regencies.json`, dst untuk mendapatkan ID yang benar.
+> **Catatan:** ID yang digunakan dalam API ini mengikuti standar kode wilayah BPS (Badan Pusat Statistik).
 
 | Deskripsi | Endpoint | Contoh URL (Jawa Barat) |
 | --- | --- | --- |
-| **Semua Provinsi** | `/provinces.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/provinces.json) |
-| **Semua Kabupaten** | `/regencies.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/regencies.json) |
-| **Kabupaten per Provinsi** | `/regencies/{provinceId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/regencies/1.json) |
-| **Semua Kecamatan** | `/districts.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/districts.json) |
-| **Kecamatan per Kabupaten** | `/districts/{regencyId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/districts/1.json) |
-| **Semua Desa** (Besar!) | `/villages.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/villages.json) |
-| **Desa per Kecamatan** | `/villages/{districtId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/villages/1.json) |
+| **Semua Provinsi** | `/provinces.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/provinces.json) |
+| **Semua Kabupaten** | `/regencies.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/regencies.json) |
+| **Kabupaten per Provinsi** | `/regencies/{provinceId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/regencies/32.json) |
+| **Semua Kecamatan** | `/districts.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/districts.json) |
+| **Kecamatan per Kabupaten** | `/districts/{regencyId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/districts/3201.json) |
+| **Semua Desa** (Besar!) | `/villages.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/villages.json) |
+| **Desa per Kecamatan** | `/villages/{districtId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/villages/320101.json) |
 
 > **Catatan:** Sangat disarankan menggunakan endpoint granular (`/regencies/{provinceId}.json`, `/districts/{regencyId}.json`, `/villages/{districtId}.json`) untuk performa aplikasi yang maksimal.
 
