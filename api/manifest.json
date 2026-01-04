@@ -1,6 +1,86 @@
 {
-  "generatedAt": "2026-01-04T09:34:24.651Z",
+  "generatedAt": "2026-01-04T09:58:06.205Z",
   "files": [
+    {
+      "name": "districts/1.json",
+      "sizeBytes": 44197,
+      "sha256": "bba6dce3bc1886195181e88526513f7a27be042fa726cb371615fec350238b1a"
+    },
+    {
+      "name": "districts/10.json",
+      "sizeBytes": 17010,
+      "sha256": "b2d7e839278bcfdb781645abe0800c915b41fa90df6c8e41479da9b2ff5fe3a4"
+    },
+    {
+      "name": "districts/11.json",
+      "sizeBytes": 18117,
+      "sha256": "6dd17e6d0cb9627ef6122902578f0e3ea0572ce2a23f5389beda691e817210b3"
+    },
+    {
+      "name": "districts/12.json",
+      "sizeBytes": 9534,
+      "sha256": "18ba46c762f92dd196ecca3d8faf6fbebc0542d021d4317d5832794afc45454b"
+    },
+    {
+      "name": "districts/13.json",
+      "sizeBytes": 11011,
+      "sha256": "8412ef0eeab0e8898662c9ed5fc943c03ccfb12533bde7f741364d99f6c8d3d9"
+    },
+    {
+      "name": "districts/14.json",
+      "sizeBytes": 3402,
+      "sha256": "2b33babc4458ba590b4a8c94cf5e9e18e618eb53da6be911f3d87d617beb39e8"
+    },
+    {
+      "name": "districts/15.json",
+      "sizeBytes": 3056,
+      "sha256": "6548726cc669325ad27cce4fd4cdd37108e3e13b98a0cce6da07abbe9fb05a5f"
+    },
+    {
+      "name": "districts/18.json",
+      "sizeBytes": 3125,
+      "sha256": "65377d535486fa18675a30e210eac5860c87179dad40d04ea580d3de53f720a9"
+    },
+    {
+      "name": "districts/2.json",
+      "sizeBytes": 3956,
+      "sha256": "8ff6c708f9031d5dfdc17de53cf3f5494d0d869b4040a413ee7d3a640d94b466"
+    },
+    {
+      "name": "districts/3.json",
+      "sizeBytes": 8061,
+      "sha256": "504e5d3ffc80ea2cb9b1d41af2ffca6e42663557449301b542da0706da87c8b7"
+    },
+    {
+      "name": "districts/4.json",
+      "sizeBytes": 40297,
+      "sha256": "89e9f51212e0a39b22ecec8ff5e3dc02d1fbe13a1b1b79d82223d876aff26fac"
+    },
+    {
+      "name": "districts/5.json",
+      "sizeBytes": 5346,
+      "sha256": "f188affa1612fae9507a6bd5cdcbf7d9ec2b7cbccddcf36ba01c1a47b18eab3e"
+    },
+    {
+      "name": "districts/6.json",
+      "sizeBytes": 46164,
+      "sha256": "8d0537ca95af943361c0ca7a6ed4335dba878577ead78e0d5ae5da0aca090767"
+    },
+    {
+      "name": "districts/7.json",
+      "sizeBytes": 22530,
+      "sha256": "4cdf561d9a6d4febd274cfc0e6feba16de3bb67bbf27a58e1e618d1793ba7cb5"
+    },
+    {
+      "name": "districts/8.json",
+      "sizeBytes": 13457,
+      "sha256": "81b30c11c4ccf145627f62243eeb06c1505dc2e0c8b8a889160ed5f5b42a858d"
+    },
+    {
+      "name": "districts/9.json",
+      "sizeBytes": 10710,
+      "sha256": "d3cb78465d5bd1e3afcb8a05b19a1084eb78ba74ebdc0b13fe35c853673e8d23"
+    },
     {
       "name": "districts.json",
       "sizeBytes": 318184,
@@ -10,6 +90,86 @@
       "name": "provinces.json",
       "sizeBytes": 2456,
       "sha256": "bd3f7ff400fd09e3915073fc6a3129601c64b980201efc291bb373cf292b471f"
+    },
+    {
+      "name": "regencies/1.json",
+      "sizeBytes": 1957,
+      "sha256": "6de1cfe6ea45e475dd726cc2497fd48f433078a6a78c8bbce0761d61bb8f5c18"
+    },
+    {
+      "name": "regencies/10.json",
+      "sizeBytes": 1161,
+      "sha256": "84bdce98fc43a8deda01662885260327b33a4c51a676f64a04821d1baf452d44"
+    },
+    {
+      "name": "regencies/11.json",
+      "sizeBytes": 1363,
+      "sha256": "e662b7e6f42ac486ba0e8f538d62242a0813c56c06dc169b6cc763a34c8dcf21"
+    },
+    {
+      "name": "regencies/12.json",
+      "sizeBytes": 757,
+      "sha256": "f2934cc9061e6b483cd321e1423115407e6349f5e50d4562b753c94cbc6cff3d"
+    },
+    {
+      "name": "regencies/13.json",
+      "sizeBytes": 611,
+      "sha256": "e7e4d7afaceec94f68adfe9ffdc83760ec001e73ab3d809ea3a54bfe1f387396"
+    },
+    {
+      "name": "regencies/14.json",
+      "sizeBytes": 543,
+      "sha256": "98e26e0a3967398d1e03929f8e9aea49bd876ad2de641860036a661625a61cee"
+    },
+    {
+      "name": "regencies/15.json",
+      "sizeBytes": 578,
+      "sha256": "0fbfaba7da200e7f0404ec414048309304edd41622a00ba70266512796a402a0"
+    },
+    {
+      "name": "regencies/18.json",
+      "sizeBytes": 1073,
+      "sha256": "5f0489398eadc520df3eddedb21994c5dffdd24a5a999143e1f7bfae370c4036"
+    },
+    {
+      "name": "regencies/2.json",
+      "sizeBytes": 643,
+      "sha256": "87fcfcf1871385039561ec88fe427a909e051a16c2464b623e6e9b1ade70ffbd"
+    },
+    {
+      "name": "regencies/3.json",
+      "sizeBytes": 732,
+      "sha256": "d1b2f26eb4f8e4064d82c9519796574b9b49ba71452c3cfd6ecbe8967ee8da4c"
+    },
+    {
+      "name": "regencies/4.json",
+      "sizeBytes": 2514,
+      "sha256": "612c08c62456ab4023913a66e433bbeadfdea7ace703867d61b934891187ef1d"
+    },
+    {
+      "name": "regencies/5.json",
+      "sizeBytes": 366,
+      "sha256": "6161e934823a1bb5c95df12d11a51ba233d1a6683b85eed1098b2f543fdbd66d"
+    },
+    {
+      "name": "regencies/6.json",
+      "sizeBytes": 2730,
+      "sha256": "aaf614ac97d0dde3cc15ea4dc41c391be28d3968ccb1db497e029d58fef9106d"
+    },
+    {
+      "name": "regencies/7.json",
+      "sizeBytes": 1760,
+      "sha256": "47254fdd14cd449a9dd676b5678c00d5c779b1fd98aa2588915e9284d6e7ecb2"
+    },
+    {
+      "name": "regencies/8.json",
+      "sizeBytes": 1453,
+      "sha256": "353f1147fcb96f2b0419055ead28650044f264d50487fe6023251e125bbc077e"
+    },
+    {
+      "name": "regencies/9.json",
+      "sizeBytes": 828,
+      "sha256": "1639f83b7c1cebc541a947bb49eda80843498365e59b55dab43e5c8ce2ca7190"
     },
     {
       "name": "regencies.json",

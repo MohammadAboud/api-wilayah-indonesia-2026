@@ -89,11 +89,13 @@ Anda dapat mengakses data langsung melalui URL berikut (ganti `<username>` dan `
 | --- | --- | --- |
 | **Semua Provinsi** | `/provinces.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/provinces.json) |
 | **Semua Kabupaten** | `/regencies.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/regencies.json) |
+| **Kabupaten per Provinsi** | `/regencies/{provinceId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/regencies/11.json) |
 | **Semua Kecamatan** | `/districts.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/districts.json) |
+| **Kecamatan per Provinsi** | `/districts/{provinceId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/districts/11.json) |
 | **Semua Desa** (Besar!) | `/villages.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/villages.json) |
 | **Desa per Provinsi** | `/villages/{provinceId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.0/api/villages/11.json) |
 
-> **Catatan:** Sangat disarankan menggunakan endpoint `/villages/{provinceId}.json` untuk data desa agar aplikasi Anda tidak perlu mengunduh file `villages.json` yang ukurannya sangat besar (>3MB).
+> **Catatan:** Sangat disarankan menggunakan endpoint per-provinsi (`/regencies/{id}.json`, `/districts/{id}.json`, `/villages/{id}.json`) untuk performa aplikasi yang lebih baik.
 
 ## Cara Penggunaan
 
