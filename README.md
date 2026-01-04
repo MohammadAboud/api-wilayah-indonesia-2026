@@ -25,7 +25,7 @@ API ini dikemas dengan pendekatan **statis** (tanpa database/backend). Cukup hos
 Kelebihan pendekatan ini:
 - **Cepat & Murah**: Bisa di-hosting gratis di GitHub Pages, Vercel, atau Netlify.
 - **CDN Ready**: Bisa diakses lewat jsDelivr untuk performa tinggi dan caching global.
-- **Optimasi**: Data desa (villages) yang besar dipecah per-provinsi untuk mengurangi ukuran download.
+- **Optimasi**: Data desa (villages) yang besar dipecah per-kecamatan untuk mengurangi ukuran download.
 
 ## Struktur Data
 
@@ -66,7 +66,7 @@ Data disimpan dalam folder `api/` dengan format JSON Array.
 ]
 ```
 
-### Desa/Kelurahan (`villages.json` & `villages/{provinceId}.json`)
+### Desa/Kelurahan (`villages.json` & `villages/{districtId}.json`)
 ```json
 [
   {
@@ -106,17 +106,63 @@ Anda dapat mengakses data langsung melalui URL berikut (ganti `<username>` dan `
 Mengambil daftar provinsi:
 
 ```javascript
-fetch('https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/provinces.json')
+fetch('https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json')
   .then(response => response.json())
   .then(provinces => console.log(provinces));
 ```
 
-Mengambil daftar desa di provinsi Jawa Barat (ID: 32):
+Mengambil daftar desa di Kecamatan Bakongan (ID: 110101):
 
 ```javascript
-fetch('https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v2.0.1/api/villages/1.json')
+fetch('https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/villages/110101.json')
   .then(response => response.json())
   .then(villages => console.log(villages));
+```
+
+### Contoh Fetch (PHP)
+
+```php
+<?php
+$url = 'https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json';
+$data = file_get_contents($url);
+$provinces = json_decode($data, true);
+
+print_r($provinces);
+?>
+```
+
+### Contoh Fetch (Python)
+
+```python
+import requests
+
+url = 'https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json'
+response = requests.get(url)
+provinces = response.json()
+
+print(provinces)
+```
+
+### Contoh Fetch (Go)
+
+```go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"net/http"
+)
+
+func main() {
+	resp, _ := http.Get("https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json")
+	defer resp.Body.Close()
+
+	var provinces []map[string]interface{}
+	json.NewDecoder(resp.Body).Decode(&provinces)
+
+	fmt.Println(provinces)
+}
 ```
 
 ### Contoh Filter (Client-side)
@@ -148,7 +194,7 @@ Jika Anda ingin mengembangkan atau memodifikasi data ini secara lokal:
 
 3. **Update Data**
    - Edit file JSON di folder `api/` jika diperlukan.
-   - Jika mengubah data desa, jalankan script split untuk memperbarui file per-provinsi:
+   - Jika mengubah data desa, jalankan script split untuk memperbarui file per-kecamatan:
      ```bash
      node scripts/split-villages.js
      ```
